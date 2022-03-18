@@ -1,5 +1,5 @@
-git+git://github.com/LonamiWebs/Telethon@2e1be01#egg=telethon
-cryptg==0.2.post2
+https://github.com/LonamiWebs/Telethon/archive/2e1be01.zip
+# cryptg==0.2.post2
 
 # for reading .env files
 python-dotenv>=0.10
