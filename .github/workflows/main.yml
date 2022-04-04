@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main # Changing the branch here would also work
+      - master # Changing the branch here would also work
 
 jobs:
   build:
@@ -15,4 +15,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "YOUR APP's NAME" #Must be unique in Heroku
           heroku_email: "YOUR EMAIL"
-          procfile: "web: npm start"
+        env:
+          HD_FIREBASE_API_KEY: ${{secrets.FIREBASE_API_KEY}}
+          HD_RANDOM_DATA: "Hello"
